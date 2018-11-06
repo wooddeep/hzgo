@@ -7,7 +7,9 @@
 
 ### 3. make 
 
-### 4. make run
+### 4. make hz
+
+### 5. make run
 
 
 
