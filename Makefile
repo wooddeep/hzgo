@@ -1,6 +1,6 @@
-.PHONY: clean hz clean
+.PHONY: clean hz
 
-TARGET=foo
+TARGET=hzgo
 
 JVM_LIB_PATH = $(JAVA_HOME)/jre/lib/server
 
@@ -20,7 +20,7 @@ hz:
 	cp -r java/target/classes/com ./
 
 run:
-	@export LD_LIBRARY_PATH=${JVM_LIB_PATH};./foo
+	@export LD_LIBRARY_PATH=${JVM_LIB_PATH};./hzgo
 
 clean:
 	rm -f *.o *.so *.a $(TARGET)
